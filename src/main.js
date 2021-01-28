@@ -226,8 +226,8 @@ window.boot = function () {
 
   // 初始化资源
   cc.AssetLibrary.init({
-    libraryPath: '/res/import',
-    rawAssetsBase: '/res/raw-',
+    libraryPath: './res/import',
+    rawAssetsBase: './res/raw-',
     rawAssets: settings.rawAssets,
     packedAssets: settings.packedAssets,
     md5AssetsMap: settings.md5AssetsMap,
