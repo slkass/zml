@@ -226,8 +226,8 @@ window.boot = function () {
 
   // 初始化资源
   cc.AssetLibrary.init({
-    libraryPath: './res/import',
-    rawAssetsBase: './res/raw-',
+    libraryPath: 'https://cdn.jsdelivr.net/gh/Slackboi/wjkpintu/res/import',
+    rawAssetsBase: 'https://cdn.jsdelivr.net/gh/Slackboi/wjkpintu/res/raw-',
     rawAssets: settings.rawAssets,
     packedAssets: settings.packedAssets,
     md5AssetsMap: settings.md5AssetsMap,
@@ -239,7 +239,7 @@ window.boot = function () {
 
 // main.js is qqplay and jsb platform entry file, so we must leave platform init code here
 if (false) {
-  BK.Script.loadlib('GameRes:/./src/settings.js');
+  BK.Script.loadlib('GameRes:/https://cdn.jsdelivr.net/gh/Slackboi/wjkpintu/src/settings.js');
   BK.Script.loadlib();
   BK.Script.loadlib('GameRes://libs/qqplay-downloader.js');
 
@@ -263,12 +263,12 @@ if (false) {
 
   var isRuntime = (typeof loadRuntime === 'function');
   if (isRuntime) {
-    require('./src/settings.js');
-    require('./src/cocos2d-runtime.js');
+    require('https://cdn.jsdelivr.net/gh/Slackboi/wjkpintu/src/settings.js');
+    require('https://cdn.jsdelivr.net/gh/Slackboi/wjkpintu/src/cocos2d-runtime.js');
     require('jsb-adapter/engine/index.js');
   } else {
-    require('./src/settings.js');
-    require('./src/cocos2d-jsb.js');
+    require('https://cdn.jsdelivr.net/gh/Slackboi/wjkpintu/src/settings.js');
+    require('https://cdn.jsdelivr.net/gh/Slackboi/wjkpintu/src/cocos2d-jsb.js');
     require('jsb-adapter/jsb-engine.js');
   }
 
