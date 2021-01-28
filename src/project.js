@@ -1408,7 +1408,7 @@ window.__require = function e(t, n, o) {
         cc._RF.push(t, "197e1hfNnxIcJx73V3VhUxY", "HttpManagerJs");
         var a = e("GameConfig"),
             i = (c(o = {
-                URL: "",
+                URL: "http://www.wesane.com/h5service.php/Interface/services",
                 cacheList: null,
                 isBusy: null,
                 req: null,
@@ -1766,16 +1766,16 @@ window.__require = function e(t, n, o) {
             play: function () {
                 console.log(1);
                 var e = this;
-                adBreak({
-                    type: "next",
-                    name: "restart-game",
-                    beforeBreak: function () {
-                        e.enableButtons()
-                    },
-                    afterBreak: function () {
-                        e.enableButtons()
-                    }
-                })
+                // adBreak({
+                //     type: "next",
+                //     name: "restart-game",
+                //     beforeBreak: function () {
+                //         e.enableButtons()
+                //     },
+                //     afterBreak: function () {
+                //         e.enableButtons()
+                //     }
+                // })
             },
             enableButtons: function () {},
             addTouchEvents: function () {
@@ -2041,7 +2041,7 @@ window.__require = function e(t, n, o) {
                         i = c.substring(c.lastIndexOf("/game/") + 1, c.length).split("/");
                     i.length >= 2 && (a = i[1]), this.gameHttpId = a, cc.log("gameId", a);
                     e.substring(e.lastIndexOf("//") + 4, e.lastIndexOf("com") + 3);
-                    this.moreGameUrl = ""
+                    this.moreGameUrl = "http://m.wesane.com/"
                 },
                 gameOverShowText: function (e, t) {
                     // this.ajaxLoad("http://www.wesane.com/admin.php/Gamescore/saveGamescore", "gameScore=" + e + "&gameId=" + this.gameHttpId + "&gameType=" + t, this.scoreResult)
