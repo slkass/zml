@@ -1976,8 +1976,7 @@ window.__require = function e(t, n, o) {
     MainManage: [function (e, t, n) {
         "use strict";
         cc._RF.push(t, "946adGkxvdBmZXnlD952XtK", "MainManage");
-        var o = e("HttpManagerJs"),
-            c = e("LanguageSetJs"),
+        var c = e("LanguageSetJs"),
             a = e("GameConfig"),
             i = e("LoadSceneJs"),
             r = (e("GameUiTools"), {
@@ -2026,7 +2025,7 @@ window.__require = function e(t, n, o) {
                         if (a.playNum >= 1) return;
                         a.playNum++
                     }
-                    a.launchScene = e, a.Bros = t, a.caS = n, this.curType = 1, this.getHttpGameId(), this.gamePV_load(), console.log("thisg", this.gameHttpId), o.send("103", null, this.getLinkGameReturn, this);
+                    a.launchScene = e, a.Bros = t, a.caS = n, this.curType = 1, this.getHttpGameId(), this.gamePV_load(), console.log("thisg", this.gameHttpId), this.getLinkGameReturn();
                     var c = this.initLanguage();
                     this.gameNameText = c.game_name, this.gameInfoText = c.game_info, this.txtStartText = c.txtStart, this.txtMoreText = c.txtMore, this.txtAgainText = c.txtAgain, this.gameEndLText = c.gameEndL, this.gameEndL1Text = c.gameEndL1, this.bgLayRgb = c.bgRgb, this.gameEndName1 = c.gameT2, this.gameEndName2 = c.gameT3, this.gameEndUrl1 = c.gameUrl1, this.gameEndUrl2 = c.gameUrl2, this.langugeType = this.curType
                 },
@@ -2066,13 +2065,12 @@ window.__require = function e(t, n, o) {
                 },
                 getLinkGameReturn: function (e, t, n, o) {
                   console.log('getLinkGameReturn')
-                    if (console.log("err0", e), console.log("err1", t), console.log("err2", n), console.log("err3", o), 0 == e) {
-                        this.ranLinkData = t, console.log("LoadMainGameScnee");
-                        var c = a.launchScene,
-                            r = a.Bros,
-                            s = a.caS;
-                        i.goToCover(this.adShowBefore, this.adShowAfter, c, r, s)
-                    }
+                  console.log("err0", e), console.log("err1", t), console.log("err2", n), console.log("err3", o)
+                  this.ranLinkData = t, console.log("LoadMainGameScnee");
+                  var c = a.launchScene,
+                      r = a.Bros,
+                      s = a.caS;
+                  i.goToCover(this.adShowBefore, this.adShowAfter, c, r, s)
                 },
                 ranRecGameData: function () {
                     if (null != this.recGameData && "" != this.recGameData) {
