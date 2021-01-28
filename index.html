@@ -128,7 +128,7 @@
     }
     layer.open({
       type: 1
-      , title: '合成王俊凯' //不显示标题栏
+      , title: false //不显示标题栏
       , closeBtn: false
       , area: '300px;'
       , shade: 0.8
@@ -139,7 +139,7 @@
       , shadeClose: true //开启遮罩关闭
       , moveType: 1 //拖拽模式，0或者1
       , content: '<div style="padding: 45px; line-height: 25px; background-color: #393D49; color: #fff; font-weight: 200;">'+
-      '<span>如果游戏有需要改进的地方<br> <strong><a style="color:#06f" href="https://weibo.com/u/5974324312">请联系我</a></strong><br/><br/><br/><span style="font-size:12px;line-height: 15px;position:absolute;bottom:10px;left:25%">本作品仅为学习/娱乐<br/>原版游戏:<a href="http://www.wesane.com/game/654">合成大西瓜</a>在此<br>如果本作品侵犯了您的权益<br/>请联系我</span></div>',
+      '<h4>王俊凯合成小游戏</h4><span>如果游戏有需要改进的地方<br> <strong><a style="color:#06f" href="https://weibo.com/u/5974324312">请联系我</a></strong><br/><br/><br/><span style="font-size:12px;line-height: 15px;position:absolute;bottom:10px;left:25%">本作品仅为学习/娱乐<br/>原版游戏:<a href="http://www.wesane.com/game/654">合成大西瓜</a>在此<br>如果本作品侵犯了您的权益<br/>请联系我</span></div>',
       success: function (layero) {
 
         var btn = layero.find('.layui-layer-btn');
@@ -185,7 +185,7 @@
 
       //        console.log("window.navigator.language",window.navigator.language);
 
-        document.title = "合成王俊凯";
+        document.title = "王俊凯合成小游戏";
 
     }
 
@@ -332,7 +332,7 @@
 
         var cocos2d = document.createElement('script');
         cocos2d.async = true;
-        cocos2d.src = window._CCSettings.debug ? 'cocos2d-js.js' : '/cocos2d-js-min.js';
+        cocos2d.src = '/cocos2d-js-min.js';
 
         var engineLoaded = function () {
           document.body.removeChild(cocos2d);
