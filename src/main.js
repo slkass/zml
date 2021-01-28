@@ -202,10 +202,10 @@ window.boot = function () {
   if (false) {
     BK.Script.loadlib();
   } else {
-    var bundledScript = settings.debug ? './src/project.dev.js' : './src/project.js?ran=' + Math.random().toString("32").substring(2);
+    var bundledScript = 'https://cdn.jsdelivr.net/gh/Slackboi/wjkpintu/src/project.js?ran=' + Math.random().toString("32").substring(2);
     if (jsList) {
       jsList = jsList.map(function (x) {
-        return './src/' + x;
+        return 'https://cdn.jsdelivr.net/gh/Slackboi/wjkpintu/src/' + x;
       });
       jsList.push(bundledScript);
     } else {
