@@ -2064,8 +2064,6 @@ window.__require = function e(t, n, o) {
                     return cc.sys.language == cc.sys.LANGUAGE_CHINESE ? (this.curType = 1, e = c.language_1) : (cc.log("\u82f1\u6587"), this.curType = 2, e = c.language_2), e
                 },
                 getLinkGameReturn: function (e, t, n, o) {
-                  console.log('getLinkGameReturn')
-                  console.log("err0", e), console.log("err1", t), console.log("err2", n), console.log("err3", o)
                   this.ranLinkData = t, console.log("LoadMainGameScnee");
                   var c = a.launchScene,
                       r = a.Bros,
