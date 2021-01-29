@@ -188,12 +188,6 @@ window.boot = function () {
     console.log("landscape,", launchScene);
     var MainManger = __require("MainManage");
     MainManger.init(launchScene, cc.sys.isBrowser, canvas.style.visibility);
-
-
-
-
-
-
   };
 
   // jsList
