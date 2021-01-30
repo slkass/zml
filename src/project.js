@@ -1019,7 +1019,7 @@ window.__require = function e(t, n, o) {
                     var t = Math.ceil(e / 1500 * 94);
                     t > 94 && (t = 94);
                     var n = 5 + t;
-                    return "\u51fb\u8d25\u4e86\u5168\u7403" + n + "%\u7684\u73a9\u5bb6\uff01", ["\u51fb\u8d25\u4e86\u5168\u7403" + n + "%\u7684\u73a9\u5bb6\uff01", "\u64ca\u6557\u4e86\u5168\u7403" + n + "%\u7684\u73a9\u5bb6\uff01", "Beat " + n + " % of global players", "\uc804 \uc138\uacc4" + n + "% \uc758 \uc720 \uc800 \ub97c \uc774 \uacbc \uc2b5 \ub2c8 \ub2e4"][i.default.returnCurrentLanType() - 1]
+                    return "\u8d85\u8fc7\u4e86" + n + "%\u7684\u73a9\u5bb6\uff01", ["\u8d85\u8fc7\u4e86" + n + "%\u7684\u73a9\u5bb6\uff01", "\u64ca\u6557\u4e86\u5168\u7403" + n + "%\u7684\u73a9\u5bb6\uff01", "Beat " + n + " % of global players", "\uc804 \uc138\uacc4" + n + "% \uc758 \uc720 \uc800 \ub97c \uc774 \uacbc \uc2b5 \ub2c8 \ub2e4"][i.default.returnCurrentLanType() - 1]
                 }, t.Instance = null, c([p(cc.Node)], t.prototype, "clickMask", void 0), c([p(cc.Node)], t.prototype, "failedUiBox", void 0), c([p(cc.Node)], t.prototype, "di", void 0), c([p(cc.Label)], t.prototype, "levelTxt", void 0), c([p(cc.Node)], t.prototype, "guan", void 0), c([p(cc.Node)], t.prototype, "continueTip", void 0), c([p(cc.Label)], t.prototype, "scoreLabel", void 0), c([p(cc.Node)], t.prototype, "highScoreNode", void 0), c([p(cc.Node)], t.prototype, "highScore", void 0), c([p(cc.Label)], t.prototype, "highScoreLabel", void 0), c([p(cc.Label)], t.prototype, "resultTxt", void 0), c([p(cc.Label)], t.prototype, "overTxt", void 0), c([p(cc.Node)], t.prototype, "moreGameBtn", void 0), c([p(cc.Node)], t.prototype, "reStartBtn", void 0), c([p(cc.Vec2)], t.prototype, "failedBoxPos", void 0), c([p], t.prototype, "standardScore", void 0), c([p(cc.Node)], t.prototype, "bgMask", void 0), c([p(cc.Node)], t.prototype, "bencichengji", void 0), c([p(cc.SpriteFrame)], t.prototype, "bencichengjiarr", void 0), c([p(cc.Node)], t.prototype, "gengduoyouxi", void 0), c([p(cc.SpriteFrame)], t.prototype, "gengduoyouxiarr", void 0), c([p(cc.Node)], t.prototype, "adsButton2", void 0), c([p(cc.Node)], t.prototype, "bannerButton", void 0), t = n = c([d], t)
             }(cc.Component);
         n.default = f, cc._RF.pop()
@@ -1352,7 +1352,7 @@ window.__require = function e(t, n, o) {
         var o = {
             newSprite: function (e, t) {
                 var n = new cc.Node;
-                return t ? (e = e.split(".")[0], n.addComponent(cc.Sprite).spriteFrame = GameTools.love2048FrameCache.getSpriteFrame(e)) : n.addComponent(cc.Sprite).spriteFrame = new cc.SpriteFrame("https://cdn.jsdelivr.net/gh/Slackboi/mergelzn/res/raw-assets/resources/" + e), n
+                return t ? (e = e.split(".")[0], n.addComponent(cc.Sprite).spriteFrame = GameTools.love2048FrameCache.getSpriteFrame(e)) : n.addComponent(cc.Sprite).spriteFrame = new cc.SpriteFrame("./res/raw-assets/resources/" + e), n
             },
             setNodeSpriteFrame: function (e, t) {
                 e.getComponent(cc.Sprite).spriteFrame = GameTools.love2048FrameCache.getSpriteFrame(t)
@@ -1687,46 +1687,10 @@ window.__require = function e(t, n, o) {
         cc._RF.push(t, "4754e8KuPZJCqklCNyKpG29", "LanguageSetJs");
         t.exports = {
             language_1: {
-                game_name: "\u300c\u5c04\u82f9\u679c\u300d",
-                game_name1: "\u5c04\u82f9\u679c",
-                game_info: "\u628a\u63e1\u65f6\u673a\uff0c\u5c04\u4e2d\u82f9\u679c\u3002",
-                txtStart: "\u5f00\u59cb",
-                txtMore: "\u66f4\u591a\u6e38\u620f",
-                txtAgain: "\u518d\u73a9\u4e00\u6b21",
-                txtShare1: "\u5728\u6e38\u620f\u4e2d ",
-                txtShare2: "\u5f97\u5206\u4e86\uff0c\u597d\u554a!\u4f60\u548c\u6211\u4e00\u8d77\u6765\u6bd4\u8d5b!",
-                bgRgb: "#3698C5",
-                gameT1: "\u5173\u6ce8\u6211\u4eec",
-                gameT2: "\u7eb8\u724c\u63a5\u9f99",
-                gameT3: "\u9526\u4e0a\u6dfb\u82b1",
-                gameUrl1: "http://g.regogame.com/game/9/",
-                gameUrl2: "http://g.regogame.com/game/3/",
-                gameT11: "\u5173\u6ce8\u5fae\u4fe1",
-                gameT12: "\u5173\u6ce8Kakao",
-                gameT13: "\u5173\u6ce8Line",
-                gameEndL: "\u6e38 \u620f \u7ed3 \u675f",
-                gameEndL1: "\u7a0d \u5019 \u67e5 \u770b \u5206 \u6570"
-            },
-            language_2: {
-                game_name: "\u300cShot Apples\u300d",
-                game_name1: "Shot Apples",
-                game_info: "Seize the opportunity and shoot the apple.",
-                txtStart: "Start",
-                txtMore: "More Game",
-                txtAgain: "Play Again",
-                txtShare1: "In Game ",
-                txtShare2: " Let's play together!",
-                bgRgb: "#3698C5",
-                gameT1: "Follow Us",
-                gameT2: "Thousand Flower",
-                gameT3: "Eliminate Star",
-                gameUrl1: "http://g.fromgame.com/game/53",
-                gameUrl2: "http://g.fromgame.com/game/13",
-                gameT11: "Focus WeChat",
-                gameT12: "Focus Kakao",
-                gameT13: "Focus Line",
-                gameEndL: "Game OVer",
-                gameEndL1: "View the score later"
+              bgRgb: "#3698C5",
+              gameT11: "\u5173\u6ce8\u5fae\u4fe1",
+              gameEndL: "Game Over",
+              gameEndL1: "\u70b9 \u51fb \u7ee7 \u7eed"
             }
         }, cc._RF.pop()
     }, {}],
@@ -1810,7 +1774,7 @@ window.__require = function e(t, n, o) {
             gameEnd1: function () {
                 var e = this,
                     t = this.returnCurrentLanType();
-                1 == t ? (this.gameOverT1.string = "\u6e38 \u620f \u7ed3 \u675f", this.gameOverT2.string = "\u70b9 \u51fb \u67e5 \u770b \u5206 \u6570") : 2 == t ? (this.gameOverT1.string = "\u904a \u6232 \u7d50 \u675f", this.gameOverT2.string = "\u9ede \u64ca \u67e5 \u770b \u5206 \u6578") : 4 == t ? (this.gameOverT1.string = "\uac8c\uc784 \uc885\ub8cc", this.gameOverT2.string = "\ud074\ub9ad \ud558\uc5ec \uc810\uc218 \ubcf4\uae30") : (this.gameOverT1.string = "Game Over", this.gameOverT2.string = "Click to view the score"), this.gameOveEndBool = !0, this.gameOverT1.node.zIndex = 999, this.gameOverT2.node.zIndex = 999, this.gameOverToEnd.zIndex = 999, this.gameOverT1.node.opacity = 0, this.gameOverT1.node.y = 100, this.gameOverToEnd.y = 0, this.gameOverT1.node.runAction(cc.sequence(cc.delayTime(.2), cc.spawn(cc.fadeIn(1), cc.moveBy(1, 0, -50)), cc.delayTime(.3))), this.gameOverToEnd.runAction(cc.sequence(cc.fadeTo(1, 100), cc.callFunc(function () {
+                1 == t ? (this.gameOverT1.string = "Game Over !", this.gameOverT2.string = "\u70b9 \u51fb \u7ee7 \u7eed") : 2 == t ? (this.gameOverT1.string = "\u904a \u6232 \u7d50 \u675f", this.gameOverT2.string = "\u9ede \u64ca \u67e5 \u770b \u5206 \u6578") : 4 == t ? (this.gameOverT1.string = "\uac8c\uc784 \uc885\ub8cc", this.gameOverT2.string = "\ud074\ub9ad \ud558\uc5ec \uc810\uc218 \ubcf4\uae30") : (this.gameOverT1.string = "Game Over", this.gameOverT2.string = "Click to view the score"), this.gameOveEndBool = !0, this.gameOverT1.node.zIndex = 999, this.gameOverT2.node.zIndex = 999, this.gameOverToEnd.zIndex = 999, this.gameOverT1.node.opacity = 0, this.gameOverT1.node.y = 100, this.gameOverToEnd.y = 0, this.gameOverT1.node.runAction(cc.sequence(cc.delayTime(.2), cc.spawn(cc.fadeIn(1), cc.moveBy(1, 0, -50)), cc.delayTime(.3))), this.gameOverToEnd.runAction(cc.sequence(cc.fadeTo(1, 100), cc.callFunc(function () {
                     e.gameOverToEnd.getComponent(cc.Button).enabled = !0
                 }))), this.gameOverT2.node.opacity = 0, this.gameOverT2.node.y = this.gameOverT1.node.y - 100, this.gameOverT2.node.runAction(cc.sequence(cc.delayTime(.2), cc.spawn(cc.fadeIn(1), cc.moveBy(1, 0, -50)), cc.delayTime(.3))), this.gameOverT2.node.runAction(cc.sequence(cc.delayTime(2), cc.scaleTo(.3, 1.2).easing(cc.easeSineInOut()), cc.scaleTo(.3, 1).easing(cc.easeSineInOut()))).repeatForever()
             },
@@ -3486,10 +3450,10 @@ window.__require = function e(t, n, o) {
                 if (e > 0 && e <= o) n = "\u6211\u5728" + t + "\u4e2d\u5f97\u4e86" + e + "\u5206\uff0c\u771f\u662f\u592a\u68d2\u4e86\uff0c\u518d\u7ec3\u7ec3\u5c31\u80fd\u8fbe\u5230\u6e38\u5203\u6709\u4f59\u7684\u5883\u754c\uff01";
                 else if (e > o && e <= this.standardScore) n = "\u6211\u5728" + t + "\u4e2d\u5f97\u4e86" + e + "\u5206\uff0c\u771f\u662f\u592a\u68d2\u4e86\uff0c\u518d\u7ec3\u7ec3\u5c31\u80fd\u8fbe\u5230\u6e38\u5203\u6709\u4f59\u7684\u5883\u754c\uff01";
                 else if (e > this.standardScore && e <= c) {
-                    n = "\u6211\u5728" + t + "\u4e2d\u5f97\u4e86" + e + "\u5206\uff0c\u51fb\u8d25\u4e86\u5168\u7403" + (Math.floor(12 * (e - this.standardScore) / (c - this.standardScore)) + 80) + "%\u7684\u73a9\u5bb6\uff0c\u8fdb\u5165\u4e86\u4fe1\u624b\u62c8\u6765\u7684\u5883\u754c\uff01"
+                    n = "\u6211\u5728" + t + "\u4e2d\u5f97\u4e86" + e + "\u5206\uff0c\u8d85\u8fc7\u4e86" + (Math.floor(12 * (e - this.standardScore) / (c - this.standardScore)) + 80) + "%\u7684\u73a9\u5bb6\uff0c\u8fdb\u5165\u4e86\u4fe1\u624b\u62c8\u6765\u7684\u5883\u754c\uff01"
                 } else if (e > c && e <= a) {
-                    n = "\u6211\u5728" + t + "\u4e2d\u5f97\u4e86" + e + "\u5206\uff0c\u51fb\u8d25\u4e86\u5168\u7403" + (Math.floor(7 * (e - c) / (a - c)) + 92) + "%\u7684\u73a9\u5bb6\uff0c\u8fdb\u5165\u4e86\u8fd0\u7528\u81ea\u5982\u7684\u5883\u754c\uff01"
-                } else if (e > a && e <= i) n = "\u6211\u5728" + t + "\u4e2d\u5f97\u4e86" + e + "\u5206\uff0c\u51fb\u8d25\u4e86\u5168\u740399%\u7684\u73a9\u5bb6\uff0c\u8fbe\u5230\u4e86\u884c\u4e91\u6d41\u6c34\u7684\u5883\u754c\uff01";
+                    n = "\u6211\u5728" + t + "\u4e2d\u5f97\u4e86" + e + "\u5206\uff0c\u8d85\u8fc7\u4e86" + (Math.floor(7 * (e - c) / (a - c)) + 92) + "%\u7684\u73a9\u5bb6\uff0c\u8fdb\u5165\u4e86\u8fd0\u7528\u81ea\u5982\u7684\u5883\u754c\uff01"
+                } else if (e > a && e <= i) n = "\u6211\u5728" + t + "\u4e2d\u5f97\u4e86" + e + "\u5206\uff0c\u8d85\u8fc7\u4e8699%\u7684\u73a9\u5bb6\uff0c\u8fbe\u5230\u4e86\u884c\u4e91\u6d41\u6c34\u7684\u5883\u754c\uff01";
                 else if (e > i && e < this.game_max_score) {
                     n = "\u6211\u5728" + t + "\u4e2d\u5f97\u4e86" + e + "\u5206\uff0c\u636e\u8bf4\u5168\u7403\u53ea\u6709 " + (20 - Math.ceil(17 * (e - i) / (this.game_max_score - i))) + "\u4e2a\u4eba\u8fbe\u5230\u8fd9\u4e2a\u6c34\u5e73\uff0c\u72ec\u5b64\u6c42\u8d25\uff01"
                 } else e >= this.game_max_score && (n = "\u6211\u5728" + t + "\u4e2d\u5f97\u4e86" + e + "\u5206\uff0c\u8d85\u8d8a\u4e86\u72ec\u5b64\u6c42\u8d25\uff0c\u5fc3\u6709\u7075\u7280\uff01");
