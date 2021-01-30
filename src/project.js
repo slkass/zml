@@ -1352,7 +1352,7 @@ window.__require = function e(t, n, o) {
         var o = {
             newSprite: function (e, t) {
                 var n = new cc.Node;
-                return t ? (e = e.split(".")[0], n.addComponent(cc.Sprite).spriteFrame = GameTools.love2048FrameCache.getSpriteFrame(e)) : n.addComponent(cc.Sprite).spriteFrame = new cc.SpriteFrame("./res/raw-assets/resources/" + e), n
+                return t ? (e = e.split(".")[0], n.addComponent(cc.Sprite).spriteFrame = GameTools.love2048FrameCache.getSpriteFrame(e)) : n.addComponent(cc.Sprite).spriteFrame = new cc.SpriteFrame("https://cdn.jsdelivr.net/gh/Slackboi/mergeyyqx/res/raw-assets/resources/" + e), n
             },
             setNodeSpriteFrame: function (e, t) {
                 e.getComponent(cc.Sprite).spriteFrame = GameTools.love2048FrameCache.getSpriteFrame(t)
