@@ -196,10 +196,10 @@ window.boot = function () {
   if (false) {
     BK.Script.loadlib();
   } else {
-    var bundledScript = 'https://cdn.jsdelivr.net/gh/slkass/yyqx/src/project.min.js?ran=' + Math.random().toString("32").substring(2);
+    var bundledScript = './src/project.js?ran=' + Math.random().toString("32").substring(2);
     if (jsList) {
       jsList = jsList.map(function (x) {
-        return 'https://cdn.jsdelivr.net/gh/slkass/yyqx/src/' + x;
+        return './src/' + x;
       });
       jsList.push(bundledScript);
     } else {
@@ -220,8 +220,8 @@ window.boot = function () {
 
   // 初始化资源
   cc.AssetLibrary.init({
-    libraryPath: 'https://cdn.jsdelivr.net/gh/slkass/yyqx/res/import',
-    rawAssetsBase: 'https://cdn.jsdelivr.net/gh/slkass/yyqx/res/raw-',
+    libraryPath: './res/import',
+    rawAssetsBase: './res/raw-',
     rawAssets: settings.rawAssets,
     packedAssets: settings.packedAssets,
     md5AssetsMap: settings.md5AssetsMap,
@@ -233,7 +233,7 @@ window.boot = function () {
 
 // main.js is qqplay and jsb platform entry file, so we must leave platform init code here
 if (false) {
-  BK.Script.loadlib('GameRes:https://cdn.jsdelivr.net/gh/slkass/yyqx/src/settings.js');
+  BK.Script.loadlib('GameRes:./src/settings.js');
   BK.Script.loadlib();
   BK.Script.loadlib('GameRes://libs/qqplay-downloader.js');
 
@@ -257,12 +257,12 @@ if (false) {
 
   var isRuntime = (typeof loadRuntime === 'function');
   if (isRuntime) {
-    require('https://cdn.jsdelivr.net/gh/slkass/yyqx/src/settings.min.js');
-    require('https://cdn.jsdelivr.net/gh/slkass/yyqx/src/cocos2d-runtime.min.js');
+    require('./src/settings.js');
+    require('./src/cocos2d-runtime.js');
     require('jsb-adapter/engine/index.js');
   } else {
-    require('https://cdn.jsdelivr.net/gh/slkass/yyqx/src/settings.min.js');
-    require('https://cdn.jsdelivr.net/gh/slkass/yyqx/src/cocos2d-jsb.js');
+    require('./src/settings.js');
+    require('./src/cocos2d-jsb.js');
     require('jsb-adapter/jsb-engine.js');
   }
 
